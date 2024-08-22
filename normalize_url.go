@@ -13,10 +13,7 @@ func normalizeURL(rawURL string) (string, error) {
 	}
 
 	fullPath := parsedURL.Host + parsedURL.Path
-
 	fullPath = strings.ToLower(fullPath)
-
 	fullPath = strings.TrimSuffix(fullPath, "/")
-
 	return fullPath, nil
 }
